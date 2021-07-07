@@ -2,8 +2,13 @@ import winim/com as wincom
 import json, times, jsontime
 
 proc newJDbTime*(dbTime: float): JsonNode = 
+   var dt: DateTime
+   dt.year = 2016
+   dt.monthZero = 1
+   dt.monthDayZero = 1
+
    let 
-      begTm = toTime(DateTime(year: 2016, month: mJan, monthday: 1))
+      begTm = toTime(dt)
       elapsed = toInt((dbTime - 42370.0) * 24.0 * 60.0 * 60.0)
       dateTime: DateTime = utc(begTm + elapsed.seconds)
 
