@@ -8,4 +8,4 @@ skipDirs      = @["examples", "docs"]
 
 # Dependencies
 
-requires "nim >= 0.20.2", "winim#867fba20591cef0a0cd68fcccb1d1b5b9f41cf55"
+requires "nim >= 0.20.2", "winim#bffaf742b4603d1f675b4558d250d5bfeb8b6630"
