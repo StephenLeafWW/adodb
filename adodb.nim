@@ -66,7 +66,8 @@ import os, threadpool, times
 import unicode, tables
 import json except `$`
 
-import winim/[winimx, com]
+import winim/com
+import winimx
 winimx currentSourcePath()
 
 import adodb/private/[sqlformat, parsevariant, jsontime]
